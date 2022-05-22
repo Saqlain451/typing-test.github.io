@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing speed</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ------------------------------------ heder line -------------------------------------------- -->
+    <div class="row justify-content-center my-auto">
+      <div class="col-12 col-md-10">
+        <h2 class="text-center mt-5">Welcome to test your Typing Speed</h2>
+        <p id="validMsg"></p>
+      </div>
+    </div>
+    <!--------------------------------------Type whiche have to type---------------------------------  -->
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-6">
+        <h4 id="typeText" class="text-center my-4"></h4>
+      </div>
+    </div>
+    <!-- ------------------------------------- textarea part ---------------------------------------- -->
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-6">
+        <textarea class="form-control" rows="7" id="inputText"> </textarea>
+      </div>
+    </div>
+    <!--------------------------------------- buttons ----------------------------------------------- -->
+    <div class="row justify-content-center">
+      <div class="col-2" id="btns">
+        <span class="mt-1 ms-1"><i class="fa-solid fa-play" ></i></span>
+        <button class="btn btn-warning d-block mx-auto mt-3">Start</button>
+      </div>
+    </div>
+    <!------------------------------------ show typing test result ----------------------------------- -->
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <p class="ms-3">Typing Speed = <span id="msg1"></span> </p>
+            <p class="ms-3">Error Count = <span id="msg2"></span> </p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+  </body>
+</html>
