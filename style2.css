@@ -1,0 +1,12 @@
+body{
+    background-color: whitesmoke !important;
+    display:grid;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+.form{
+    background-color: white !important;
+    border-radius:10px;
+    padding : 20px;
+}
