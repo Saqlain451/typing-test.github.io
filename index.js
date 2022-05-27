@@ -67,9 +67,13 @@ let endType = ()=>{
         let typeSpeed = Math.round((countLetter/5)/totalTime);
         // console.log(typeSpeed);
         document.getElementById("msg1").innerHTML=`${typeSpeed} WPM`;
-        alert(`Your type speed is = ${typeSpeed} WPM`)
         let errorCount = compare(text.innerHTML,textArea.value);
-        document.getElementById("msg2").innerHTML = `${errorCount} word`; 
+        alert(`Your type speed is = ${typeSpeed} WPM
+You made ${errorCount} mistakes during typing.`)
+        let errorPercent = (errorCount/text.innerHTML.split(" ").length) *100;
+        console.log(errorPercent);
+        let accuracy = Math.round(100 - errorPercent);
+        document.getElementById("msg2").innerHTML = `${accuracy}%`; 
     }
    
     
