@@ -29,9 +29,9 @@ let words = (str)=>{
     result = str.length;
     return result;
 }
-let num = 0;
+
 function compare (str1,str2){
-   
+   let num = 0;
    let words1 = str1.split (" ");
    let words2 = str2.split (" ");
     words1.forEach((elem,index) => {
